@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Brishti!</title>
+    <title>Birthday Wish</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -60,70 +59,115 @@
             line-height: 1.5;
             padding: 0 10px; /* Add some padding for mobile */
         }
+    
 
-        
-            h1 {
-                font-size: 3em;
-            }
-            .custom-message {
-                font-size: 1.1em;
-            }
-        .animated-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 16px;
-  margin-top:30px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    background: #27282c;
+}
+
+          .wave-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: #34495e; /* Dark background color */
+    color: #fff;
+    outline: none;
+    /* Add gradient for folded paper effect */
+    background-image: linear-gradient(135deg, #2c3e50, #1f2b38); /* Darker gradient */
+    animation: shadowMove 10s linear infinite; /* Animation for shadow movement */
+  }
   
-  /* Apply the animation here */
-  animation: color-glow 4s infinite linear;
-}
-
-/* Define the animation with @keyframes */
-@keyframes color-glow {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Red glow */
+  @keyframes shadowMove {
+    0% {
+      box-shadow: 
+        0 0 15px 5px rgba(255, 0, 0, 0.5);
+    }
+    10% {
+      box-shadow: 
+        15px 0 15px 5px rgba(255, 0, 0, 0.5),
+        0 15px 15px 5px rgba(255, 127, 0, 0.5),
+        -15px 0 15px 5px rgba(255, 255, 0, 0.5),
+        0 -15px 15px 5px rgba(0, 255, 0, 0.5);
+    }
+    20% {
+      box-shadow: 
+        15px 15px 15px 5px rgba(0, 255, 255, 0.5),
+        -15px 15px 15px 5px rgba(0, 0, 255, 0.5),
+        -15px -15px 15px 5px rgba(127, 0, 255, 0.5),
+        15px -15px 15px 5px rgba(255, 0, 255, 0.5);
+    }
+    30% {
+      box-shadow: 
+        0 15px 15px 5px rgba(255, 0, 127, 0.5),
+        15px 15px 15px 5px rgba(127, 255, 0, 0.5),
+        -15px -15px 15px 5px rgba(0, 255, 127, 0.5),
+        15px -15px 15px 5px rgba(127, 0, 255, 0.5);
+    }
+    
+    40% {
+      box-shadow: 
+        0 0 15px 5px rgba(255, 0, 0, 0.5);
+    }
+    50%{
+      box-shadow: 
+      0 0 15px 5px rgba(127, 0, 255, 0.5);
+    }
+    60%{
+      box-shadow: 
+      0 0 15px 5px rgba(91, 214, 183, 0.5);
+    }
+    70%{
+      box-shadow: 
+      0 0 15px 5px rgba(1, 255, 65, 0.5);
+    }
+    80%{
+      box-shadow: 
+      0 0 15px 5px rgba(229, 255, 0, 0.671);
+    }
+    90%{
+      box-shadow: 
+      0 0 15px 5px rgba(247, 45, 9, 0.712);
+    }
+    100% {
+      box-shadow: 
+        0 0 15px 5px rgba(255, 0, 0, 0.5);
+    }
   }
-  25% {
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7); /* Yellow glow */
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Green glow */
-  }
-  75% {
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Blue glow */
-  }
-  100% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Back to red */
-  }
-}
+  
+        
         
     </style>
 </head>
 <body>
-    <h1>Happy Birthday Brishti!</h1>
+    <h1>Happy Birthday সুমন এর নাং</h1>
 
     <div id="plotContainer">
         <canvas id="equationPlot" width="600" height="400"></canvas>
     </div>
 
     <div class="custom-message">
-        <p>congratulations on surviving these 20 years specially CU respect 🫡 Happy 20th जन्म দিন 🎉</p>
-        <p>Gift toh dite pari ni so something unique try korlam😁</p>
-        
-    </div>
-    <a href="https://impresscrush-codewithvansh.netlify.app/?fbclid=PAVERDUAMlLXpleHRuA2FlbQIxMAABp2F0WZ5wHuu5t0y6ejLkkGhiNmUVMF4HwxmyqnQFFu_Pwc2l4PCo3hGnkhKs_aem_JoTtzITU6EvIwM7ZfYdbXA">I have a qustion to ask" class="animated-button">Go to Another Page</a>
-    
-    <a href="https://impresscrush-codewithvansh.netlify.app/?fbclid=PAVERDUAMlLXpleHRuA2FlbQIxMAABp2F0WZ5wHuu5t0y6ejLkkGhiNmUVMF4HwxmyqnQFFu_Pwc2l4PCo3hGnkhKs_aem_JoTtzITU6EvIwM7ZfYdbXA">I have a qustion to ask</a>
-    <button onclick="window.location.href='https://impresscrush-codewithvansh.netlify.app/?fbclid=PAVERDUAMlLXpleHRuA2FlbQIxMAABp2F0WZ5wHuu5t0y6ejLkkGhiNmUVMF4HwxmyqnQFFu_Pwc2l4PCo3hGnkhKs_aem_JoTtzITU6EvIwM7ZfYdbXA'">Go to Another Page</button>
-
+        <p>[coustom message]</p>
+        <p>আমি যানি তোদের কেউ বাংলা যানে না তাই আমাদের 4টে জোগাড় করে দিস আমি জানি না</p>
+    <button class="wave-button" onclick="window.location.href='https://impresscrush-codewithvansh.netlify.app/?fbclid=PAVERDUAMlLXpleHRuA2FlbQIxMAABp2F0WZ5wHuu5t0y6ejLkkGhiNmUVMF4HwxmyqnQFFu_Pwc2l4PCo3hGnkhKs_aem_JoTtzITU6EvIwM7ZfYdbXA'">I have a question to ask</button>
     <script>
         const canvas = document.getElementById('equationPlot');
         const ctx = canvas.getContext('2d');
